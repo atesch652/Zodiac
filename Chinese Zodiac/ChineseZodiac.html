@@ -1,0 +1,143 @@
+<html>
+  <head>
+    <title>Chinese Zodiac</title>
+    <script>
+
+      function getYear()
+      {
+        var year = document.getElementById("input").value;
+        year = parseInt(year);
+
+        var monkey = "<img src = 'monkey.jpg' height = '350px' width = '600px'>";
+        var rooster = "<img src = 'rooster.jpg' height = '350px' width = '600px'>";
+        var dog = "<img src = 'dog.jpg' height = '350px' width = '600px'>";
+        var pig = "<img src = 'pig.jpg' height = '350px' width = '600px'>";
+        var rat = "<img src = 'rat.jpg' height = '350px' width = '600px'>";
+        var ox = "<img src = 'ox.jpg' height = '350px' width = '600px'>";
+        var tiger = "<img src = 'tiger.jpg' height = '350px' width = '600px'>";
+        var rabbit = "<img src = 'rabbit.jpg' height = '350px' width = '600px'>";
+        var dragon = "<img src = 'dragon.jpg' height = '350px' width = '600px'>";
+        var snake = "<img src = 'snake.jpg' height = '350px' width = '600px'>";
+        var horse = "<img src = 'horse.jpg' height = '350px' width = '600px'>";
+        var goat = "<img src = 'goat.jpg' height = '350px' width = '600px'>";
+
+        if(year % 12 == 0)
+        {
+          document.getElementById("sign").innerHTML = monkey;
+          document.getElementById("what").innerHTML = "yes?";
+        }
+        else if(year % 12 == 1)
+        {
+          document.getElementById("sign").innerHTML = rooster;
+        }
+        else if(year % 12 == 2)
+        {
+          document.getElementById("sign").innerHTML = dog;
+        }
+        else if(year % 12 == 3)
+        {
+          document.getElementById("sign").innerHTML = pig;
+        }
+        else if(year % 12 == 4)
+        {
+          document.getElementById("sign").innerHTML = rat;
+        }
+        else if(year % 12 == 5)
+        {
+          document.getElementById("sign").innerHTML = ox;
+        }
+        else if(year % 12 == 6)
+        {
+          document.getElementById("sign").innerHTML = tiger;
+        }
+        else if(year % 12 == 7)
+        {
+          document.getElementById("sign").innerHTML = rabbit;
+        }
+        else if(year % 12 == 8)
+        {
+          document.getElementById("sign").innerHTML = dragon;
+        }
+        else if(year % 12 == 9)
+        {
+          document.getElementById("sign").innerHTML = snake;
+        }
+        else if(year % 12 == 10)
+        {
+          document.getElementById("sign").innerHTML = horse;
+        }
+        else if(year % 12 == 11)
+        {
+          document.getElementById("sign").innerHTML = goat;
+        }
+      }
+
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <style>
+
+    h1{
+      font-family: 'Cinzel', serif;
+      font-size: 50px;
+      color: red;
+      text-align: center;
+    }
+
+    #a{
+      font-family: 'Caveat', cursive;
+      font-size: 28px;
+      color: black;
+      text-align: center;
+      background-color: #ffe6b3;
+    }
+
+    #b{
+      font-family: 'Satisfy', cursive;
+      font-size: 25px;
+      color: red;
+      background-color: #ffe6b3;
+    }
+
+    #input{
+      font-family: sans-serif;
+      color: red;
+      background-color: white;
+      font-size: 20px;
+      width: 500px;
+      height: 30px;
+    }
+
+    #button{
+      width: 50px;
+      height: 30px;
+      font-size: 20px;
+      color: red;
+      background-color: white;
+    }
+
+    #sign{
+      float: left;
+    }
+
+    </style>
+  </head>
+  <body>
+    <body style="background-image:url('background.jpg');">
+    <h1>Chinese Zodiac</h1>
+    <p id = "a"><b> It is believed that the The Jade Emperor (The Emperor in Heaven in Chinese folklore)
+      called for a race amongst the animals in order to determine the assignment of the 12-year cycle.
+      Each animal used what advantage they had in order to finish the race in time. The order they finished
+      determined the order of the cycle. This 12-year cycle is determined using the Chinese lunar calender
+      which varies from the western calender we are used to! </b></p>
+    <p id = "b"> <b>Type in the year you were born to learn about your Chinese Zodiac! </b></p>
+
+    <input type = "text"  id = "input" value = "Birth Year">
+    <input type = "button" id = "button" value = "->" onclick = "getYear()">
+
+
+    <span id = "sign"></span>
+    <span id = "what"></span>
+  </body>
+</html>
